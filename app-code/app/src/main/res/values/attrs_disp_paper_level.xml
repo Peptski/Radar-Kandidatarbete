@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DisplayPaperLevel">
+        <attr name="disppaperheight" format="integer" />
+    </declare-styleable>
+</resources>
