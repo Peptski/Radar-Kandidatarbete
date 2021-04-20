@@ -31,6 +31,7 @@ public class DisplayPaperLevel extends View {
     }
 
     private void init() {
+
         fillPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         fillPaint.setColor(0xFFFF0000);
         backgroundPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
@@ -61,7 +62,8 @@ public class DisplayPaperLevel extends View {
 
         canvas.drawRect(padding, padding, getWidth() - padding, getHeight() - padding, innerBackground);
         canvas.drawRect(padding, padding + heightFromLevel(), getWidth() - padding, getHeight() - padding, fillPaint);
-        canvas.drawText("g:" + green + ", r:" + red + ", b:" + blue + ", with cNum:" + colorNum, 30, 30, backgroundPaint);
+        backgroundPaint.setTextSize(60f);
+        canvas.drawText("g:" + green + ", r:" + red + ", b:" + blue + ", with cNum:" + colorNum, 30, 70, backgroundPaint);
     }
 
     private float heightFromLevel() {
