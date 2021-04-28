@@ -19,4 +19,10 @@
         android:onClick="resizeBox"
         android:text="Resize"
         android:textSize="48sp" />
+
+    <com.example.radardisplayapp.LeDeviceListAdapter
+        android:id="@+id/leList"
+        android:layout_width="match_parent"
+        android:layout_height="1181dp"
+        android:layout_weight="1" />
 </LinearLayout>
